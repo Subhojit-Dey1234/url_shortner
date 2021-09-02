@@ -25,11 +25,11 @@ class ShoppingList extends Component {
 		return (
 			<div style={{ marginTop: "3rem" }}>
 				<Container>
-					<ListGroup flush>
+					<ListGroup horizontal="sm">
 						<TransitionGroup className="shopping-list">
 							{items.map(({ _id, name , shortlink,hostname}) => (
 								<CSSTransition key={_id} timeout={500} classNames="fade">
-									<ListGroup horizontal>
+									<ListGroup horizontal="sm">
 									<ListGroupItem>
 										<Button
 											className="remove-btn"
